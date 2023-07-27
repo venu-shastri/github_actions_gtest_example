@@ -55,7 +55,7 @@ class FakeTempSensor:public ITempSensor{
 
 TEST(AutoTempRegulatorTestSuite,RegulateTempTest){
     FakeTempSensor stub;
-    AutoTempRegulator codeUnderTest(stub);
+    AutoTempRegulator codeUnderTest(&stub);
     codeUnderTest.regulateTemp();
     
 }
