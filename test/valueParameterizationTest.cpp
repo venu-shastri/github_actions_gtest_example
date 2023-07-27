@@ -1,6 +1,7 @@
 #include "gtest/gtest.h"
 int divFun(int numerator,int denominator){
-    if(denominator==0 || denominator < 0){return 0;}
+    if(denominator==0){return 0;}
+    if(denominator<0){ return -1;}
 
     return numerator/denominator;
 }
