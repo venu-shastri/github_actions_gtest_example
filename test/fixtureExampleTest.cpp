@@ -19,15 +19,15 @@ class A{
     }
 };
 
-TEST("TestFixtureTestSuite","OperationTrueTest"){
+TEST(TestFixtureTestSuite,OperationTrueTest){
     //Arrange
     C cObj;
     B bObj(&cObj);
     A obj(&bObj);
     //Act and Assert
-    ASSERT_TURE(obj.operation());
+    ASSERT_TRUE(obj.operation());
 }
-TEST("TestFixtureTestSuite","OperationFalseTest"){
+TEST(TestFixtureTestSuite,OperationFalseTest){
     //Arrange
     C cObj;
     B bObj(&cObj);
