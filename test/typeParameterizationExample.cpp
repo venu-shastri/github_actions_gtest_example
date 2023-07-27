@@ -46,3 +46,8 @@ TYPED_TEST(TempSensorFixture,GetTempTest){
     ASSERT_EQ(this->objUnderTest->getOutSideTemp(),23);
 }
 
+TEST(AutoTempRegulatorTestSuite,RegulateTempTest){
+    AutoTempRegulator codeUnderTest(nullptr);
+    codeUnderTest.regulateTemp();
+    
+}
