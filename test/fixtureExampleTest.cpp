@@ -34,11 +34,11 @@ void SetUp(){
     //Arrange
     this->cPtr=new C();
     this->bPtr=new B(cPtr);
-    this->aptr=new A(bPtr); 
+    this->aPtr=new A(bPtr); 
  }
 void TearDown(){
     //delete resources
-    delete cptr;
+    delete cPtr;
     delete bPtr;
     delete aPtr;
 }
@@ -51,6 +51,6 @@ TEST_F(TestFixtureTestSuite,OperationTrueTest){
 }
 TEST_F(TestFixtureTestSuite,OperationFalseTest){
     //Act and Assert
-    ASSERT_FALSE(aPtr->.operation());
+    ASSERT_FALSE(aPtr->operation());
 }
 
