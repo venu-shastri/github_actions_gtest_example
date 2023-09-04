@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include "StringCalculator.h"
 
 using namespace testing;
 using namespace std;
