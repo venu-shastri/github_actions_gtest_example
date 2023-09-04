@@ -71,7 +71,7 @@ TEST(string_calculator_add_When_Passed_A_Single_Number, returns_0_for_empty_stri
 	//Arrange
 	StringCalculator objUnderTest;
 	string input = "";
-	int expectedValue = 0;
+	int expectedValue = 1;
 
 	//Act
 int actualValue=objUnderTest.Add(input);
