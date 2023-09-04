@@ -2,7 +2,6 @@ add_executable(${PROJECT_NAME}.test
   AllTests.cpp
   fixtureExampleTest.cpp
   valueParameterizationTest.cpp
-  typeParameterizationExample.cpp
   StringCalculator.cpp
   ${PROJECT_NAME}Test.cpp)
 target_link_libraries(${PROJECT_NAME}.test
